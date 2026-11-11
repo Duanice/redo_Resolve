@@ -24,6 +24,14 @@ the `sm_86` binaries on WSL2. Binary hashes are in
 | Timing perturbation | Custom NVBit tool delays predicated global-memory SASS operations by 5,000 clock cycles × lane factor 1–4; all bytewise checks pass at 256 doubles | [`delay.log`](evidence/delay.log) |
 | Proof | Kuiper/F*/Pulse verifies double-add approximation and a `gpu_ref` cell read/read/write contract | [`proof.log`](evidence/proof.log) |
 
+The **static SASS disassembly** for both kernels is
+[`evidence/vectoradd_sm86.sass`](evidence/vectoradd_sm86.sass):
+`_Z13vecAddReducedPKdS0_Pdi` starts near line 19, and the unchanged tutorial
+`_Z6vecAddPdS_S_i` starts near line 488. It was dumped with `cuobjdump
+--dump-sass` from the **tested** binary with SHA-256
+`2de0064dcb0413c2d23f819d4b3845eff13b17dfa9eac851fea21fd283d16202`.
+The dynamic counts and addresses are in the NVBit logs above.
+
 `scripts/analyze_mem_trace.py` mechanically checks all 12 trace pairs. SASS
 counts are NVBit's default **warp-level** counts. The timing perturbation
 changes execution order opportunities, but this race-free vector add should
@@ -50,6 +58,7 @@ tar -xjf third_party/nvbit.tar.bz2 -C third_party
 curl -fL https://github.com/Kitware/CMake/releases/download/v3.31.10/cmake-3.31.10-linux-x86_64.tar.gz -o third_party/cmake.tar.gz
 tar -xzf third_party/cmake.tar.gz -C third_party
 NVBIT_ROOT="$PWD/third_party/nvbit_release_x86_64" CMAKE_HOME="$PWD/third_party/cmake-3.31.10-linux-x86_64" bash scripts/build_in_kuiper.sh
+bash scripts/dump_sass_in_kuiper.sh
 bash scripts/verify_in_kuiper.sh
 ```
 
