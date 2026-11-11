@@ -1,0 +1,11 @@
+* Warning 241 at /home/ubuntu/kuiper/pulse/lib/common/Pulse.Main.fsti:0.0-0.0:
+  - Unable to load obj/Pulse.Main.fsti.checked since checked file
+    obj/Pulse.Main.fsti.checked does not exist; will recheck
+    /home/ubuntu/kuiper/pulse/lib/common/Pulse.Main.fsti (suppressing this
+    warning for further modules)
+
+* Warning 361 at /home/ubuntu/kuiper/src/lib/kuiper/Kuiper.SHMem.fst:255.1-286.2:
+  - Some #push-options have not been popped. Current depth is 1.
+
+Verified module: Kuiper.VectorAdd
+All verification conditions discharged successfully

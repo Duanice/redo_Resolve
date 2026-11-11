@@ -1,0 +1,7 @@
+WARNING: Do not call CUDA memory allocation in nvbit_at_ctx_init(). It will cause deadlocks. Do them in nvbit_tool_init(). If you encounter deadlocks, remove CUDA API calls to debug.
+RESOLVE_DELAY_CYCLES=5000; lane multiplier=1..4
+delay instrumented vecAdd(double*, double*, double*, int): 3 global-memory SASS sites
+delay instrumented vecAddReduced(double const*, double const*, double*, int): 87 global-memory SASS sites
+case=0 n=256 runs=4 original_reduced=PASS repeat=PASS cpu=PASS fnv1a=bac89793eff698b1
+case=1 n=256 runs=4 original_reduced=PASS repeat=PASS cpu=PASS fnv1a=28c31cf8df2ec325
+case=2 n=256 runs=4 original_reduced=PASS repeat=PASS cpu=PASS fnv1a=88c6d410042e1854

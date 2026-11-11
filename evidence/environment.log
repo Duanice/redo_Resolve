@@ -1,0 +1,19 @@
+x86_64
+PRETTY_NAME="Ubuntu 24.04.1 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.1 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+NVIDIA GeForce RTX 3060 Laptop GPU, 616.92, 6144 MiB
+2de0064dcb0413c2d23f819d4b3845eff13b17dfa9eac851fea21fd283d16202  /home/duan/redo_Resolve/vectoradd_harness
+5450a95cd0d8aac8d6df06a55b04798472001f5bec6d6c6c5b3433db40c6c3f6  /home/duan/redo_Resolve/instr_count.so
+c3de73a0565cf54f017976b245854711c0f11b97a44a856f03740c1f1fc89ed6  /home/duan/redo_Resolve/mem_trace.so
+114c6299c6a70536be2a58c3ae4927fbff6d4faf7b8b2ac05ed9205ea75fd1fb  /home/duan/redo_Resolve/resolve_delay.so

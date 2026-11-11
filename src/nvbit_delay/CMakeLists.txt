@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.29)
+project(resolve_delay LANGUAGES CXX CUDA)
+if(NOT DEFINED NVBIT_ROOT)
+  message(FATAL_ERROR "Set -DNVBIT_ROOT=/path/to/nvbit_release_x86_64")
+endif()
+include("${NVBIT_ROOT}/tools/cmake/NVBitTool.cmake")
+add_nvbit_tool(resolve_delay)

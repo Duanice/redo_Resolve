@@ -1,0 +1,8 @@
+Date: 2026-11-11 (Asia/Shanghai)
+Host: Windows WSL2 Ubuntu, NVIDIA GeForce RTX 3060 Laptop GPU (sm_86)
+Binary SHA-256: 2de0064dcb0413c2d23f819d4b3845eff13b17dfa9eac851fea21fd283d16202
+Command: ~/redo_Resolve/vectoradd_harness 256
+case=0 n=256 runs=4 original_reduced=PASS repeat=PASS cpu=PASS fnv1a=bac89793eff698b1
+case=1 n=256 runs=4 original_reduced=PASS repeat=PASS cpu=PASS fnv1a=28c31cf8df2ec325
+case=2 n=256 runs=4 original_reduced=PASS repeat=PASS cpu=PASS fnv1a=88c6d410042e1854
+Exit status: 0

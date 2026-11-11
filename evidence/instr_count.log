@@ -1,0 +1,63 @@
+         INSTR_BEGIN = 0 - Beginning of the instruction interval where to apply instrumentation
+           INSTR_END = 4294967295 - End of the instruction interval where to apply instrumentation
+      START_GRID_NUM = 0 - Beginning of the kernel gird launch interval where to apply instrumentation
+        END_GRID_NUM = 4294967295 - End of the kernel launch interval where to apply instrumentation
+    COUNT_WARP_LEVEL = 1 - Count warp level or thread level instructions
+    EXCLUDE_PRED_OFF = 0 - Exclude predicated off instruction from count
+   ACTIVE_FROM_START = 1 - Start instruction counting from start or wait for cuProfilerStart and cuProfilerStop
+       MANGLED_NAMES = 1 - Print kernel names mangled or not
+        TOOL_VERBOSE = 0 - Enable verbosity inside the tool
+WARNING: Do not call CUDA memory allocation in nvbit_at_ctx_init(). It will cause deadlocks. Do them in nvbit_tool_init(). If you encounter deadlocks, remove CUDA API calls to debug.
+----------------------------------------------------------------------------------------------------
+
+kernel 0 - _Z6vecAddPdS_S_i - #thread-blocks 1,  kernel instructions 202, total instructions 202
+
+kernel 1 - _Z13vecAddReducedPKdS0_Pdi - #thread-blocks 1,  kernel instructions 112, total instructions 314
+
+kernel 2 - _Z6vecAddPdS_S_i - #thread-blocks 1,  kernel instructions 202, total instructions 516
+
+kernel 3 - _Z13vecAddReducedPKdS0_Pdi - #thread-blocks 1,  kernel instructions 112, total instructions 628
+
+kernel 4 - _Z6vecAddPdS_S_i - #thread-blocks 1,  kernel instructions 202, total instructions 830
+
+kernel 5 - _Z13vecAddReducedPKdS0_Pdi - #thread-blocks 1,  kernel instructions 112, total instructions 942
+
+kernel 6 - _Z6vecAddPdS_S_i - #thread-blocks 1,  kernel instructions 202, total instructions 1144
+
+kernel 7 - _Z13vecAddReducedPKdS0_Pdi - #thread-blocks 1,  kernel instructions 112, total instructions 1256
+case=0 n=16 runs=4 original_reduced=PASS repeat=PASS cpu=PASS fnv1a=584fa26b4ee674d9
+
+kernel 8 - _Z6vecAddPdS_S_i - #thread-blocks 1,  kernel instructions 202, total instructions 1458
+
+kernel 9 - _Z13vecAddReducedPKdS0_Pdi - #thread-blocks 1,  kernel instructions 112, total instructions 1570
+
+kernel 10 - _Z6vecAddPdS_S_i - #thread-blocks 1,  kernel instructions 202, total instructions 1772
+
+kernel 11 - _Z13vecAddReducedPKdS0_Pdi - #thread-blocks 1,  kernel instructions 112, total instructions 1884
+
+kernel 12 - _Z6vecAddPdS_S_i - #thread-blocks 1,  kernel instructions 202, total instructions 2086
+
+kernel 13 - _Z13vecAddReducedPKdS0_Pdi - #thread-blocks 1,  kernel instructions 112, total instructions 2198
+
+kernel 14 - _Z6vecAddPdS_S_i - #thread-blocks 1,  kernel instructions 202, total instructions 2400
+
+kernel 15 - _Z13vecAddReducedPKdS0_Pdi - #thread-blocks 1,  kernel instructions 112, total instructions 2512
+case=1 n=16 runs=4 original_reduced=PASS repeat=PASS cpu=PASS fnv1a=8421ae126c7ced25
+
+kernel 16 - _Z6vecAddPdS_S_i - #thread-blocks 1,  kernel instructions 202, total instructions 2714
+
+kernel 17 - _Z13vecAddReducedPKdS0_Pdi - #thread-blocks 1,  kernel instructions 112, total instructions 2826
+
+kernel 18 - _Z6vecAddPdS_S_i - #thread-blocks 1,  kernel instructions 202, total instructions 3028
+
+kernel 19 - _Z13vecAddReducedPKdS0_Pdi - #thread-blocks 1,  kernel instructions 112, total instructions 3140
+
+kernel 20 - _Z6vecAddPdS_S_i - #thread-blocks 1,  kernel instructions 202, total instructions 3342
+
+kernel 21 - _Z13vecAddReducedPKdS0_Pdi - #thread-blocks 1,  kernel instructions 112, total instructions 3454
+
+kernel 22 - _Z6vecAddPdS_S_i - #thread-blocks 1,  kernel instructions 202, total instructions 3656
+
+kernel 23 - _Z13vecAddReducedPKdS0_Pdi - #thread-blocks 1,  kernel instructions 112, total instructions 3768
+case=2 n=16 runs=4 original_reduced=PASS repeat=PASS cpu=PASS fnv1a=4652de75f67ab450
+Total app instructions: 3768
